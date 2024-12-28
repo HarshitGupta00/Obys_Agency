@@ -1,12 +1,6 @@
 
-// gsap.from("#line1-part1" , {
-//     y:150,
-//     opacity:0,
-//     duration:0.6,
-//     delay:0.5,
-//     stagger:0.25,
-// })
 
+function loadingAnimation(){
 
 var tl = gsap.timeline()
 tl.from(".line h1" , {
@@ -55,3 +49,33 @@ tl.from("#page1" ,{
     duaration:0.5,
     ease:Power4,
 } ) 
+
+tl.from("#hero1, #hero2, #hero3 , #hero4" , {
+  y:120,
+    opacity:0,
+    duration:0.5,
+    stagger:0.1,
+})
+tl.from("#nav-part2 h4", {
+  y:20,
+  opacity:0,
+  duration:0.5,
+  stagger:0.1,
+})
+}
+function cursorAnimation(){
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#crsr" , {
+  
+      left:dets.x,
+      top:dets.y,
+      duration:0.1,
+    })
+  });
+  
+}
+
+loadingAnimation();
+cursorAnimation();
+
+
