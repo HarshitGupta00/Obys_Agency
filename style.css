@@ -9,6 +9,10 @@
 html, body {
     height: 100%;
     width: 100%;
+
+}
+body{
+    overflow-x: hidden;
 }
 
 #crsr {
@@ -183,3 +187,147 @@ html, body {
     color: transparent;
     font-weight: 500;
 }
+#page2{
+    height: 100vh;
+    width: 100%;
+    padding-top: 17vh;
+    background-color: #151515;
+    position: relative;
+}
+#video-container{
+    height: 66vh;
+    width: 71vw;
+    position: relative;
+    left: 28%;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    
+}
+#video-cursor{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color:#FFA63D;
+    position: absolute;
+    top: -10%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+}
+#video-cursor i{
+    font-size: 2.5vw;
+}
+#video-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+      
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+}
+#page4{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    padding: 7vh;
+}
+#page4-content {
+   
+    width: 72vw ;
+    margin-left: 28%;
+}
+#page4-content h1{
+font-size: 7vw;
+text-transform: uppercase;
+
+}
+#page4-content .underline{
+    height: 1.5px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0;
+}
+#page4-content>p{
+    font-size: 2.2vw;
+    width: 50%;
+    margin-bottom: 5vw;
+}
+#page4-flex {
+    display: flex;
+    
+}
+#page4-flex img{
+    width: 48%;
+}
+#page4-flex p{
+    font-size: 1vw;
+    width: 25%;
+    margin-left: 1vw;
+    line-height: 1.5vw;
+
+}
+#page4-blue-div{
+
+    background-color: #3F7DF4;
+    width: 30vw;
+    padding: 3vw;
+    position: relative;
+    margin-top: -30vh;
+    margin-left: 24.5vw;
+  
+}
+.blue-div-elem{
+    display: flex;
+    align-items: flex-start;
+   justify-content: space-between;
+   /* background-color: red; */
+   padding: 2vw 0;
+   border-bottom: 0.1vw solid white;
+   gap: 4.5vw;
+
+}
+.blue-div-elem p{
+ width: 45%;
+ font-size: 0.95vw;
+ padding-top: 0.5vh;
+ font-weight: 500;
+}
+.blue-div-elem h4{
+    width: 60%;
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+#page5{
+   
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    padding: 7vh;
+}
+
