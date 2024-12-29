@@ -155,11 +155,13 @@ body{
     margin-left: 27%;
     height: fit-content;
     /* background-color: red; */
-    overflow: hidden;
+    overflow-y: hidden;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 99999;
+    
+    
 }
 
 .hero:nth-child(2) {
@@ -171,8 +173,20 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
-
+    position: relative;
 }
+
+
+#hero1::before {
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -1%;
+    top: 29%;
+}
+
 
 
 .hero h2, .hero h3 {
@@ -265,7 +279,16 @@ body{
 #page4-content h1{
 font-size: 7vw;
 text-transform: uppercase;
+position: relative;
 
+}
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    left: -15%;
+    top: 11%;
 }
 #page4-content .underline{
     height: 1.5px;
@@ -330,4 +353,120 @@ text-transform: uppercase;
     background-color: #151515;
     padding: 7vh;
 }
+.elem{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin: -2vw;
+    text-transform: uppercase;
+}
+.elem h1{
+    font-size: 7.5vw;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: marque;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
+@keyframes marque {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elem2{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    /* margin: 1vw; */
+}
+.elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 16px;
+    transform: translateX(calc(-100% - 20px));
+    animation-name: marque;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+.elem span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+    text-transform: uppercase;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+    text-transform: uppercase;
+}
+#footer{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding-left: 28vw;
+    padding-right: 5vw;
+
+} 
+#footer h1{
+    font-size: 7vw;
+    /* background-color: blue; */
+    text-transform: uppercase;
+    position: relative;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    left: -15%;
+    top: 11%;
+}
+.underline{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin: 3vw 0;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 3vw;
+}
+#footer-div h6{
+    font-size: 1.05vw;
+    margin-bottom: 1.5vw;
+    font-weight: 400;
+}
+.box{
+
+}
+#footer-div h5{
+    font-size: 1.7vw ;
+    margin-top: 0.2vw;
+    font-weight: 500;
+}
+#footer>h5{
+
+    font-weight: 500;
+    font-size: 1vw;
+}
