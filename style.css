@@ -9,6 +9,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    /* background-color: #151515; */
     
 
 }
@@ -185,15 +186,7 @@ body{
 }
 
 
-/* #hero1::before {
-    content: "01";
-    position: absolute;
-    font-size: 3vw;
-    font-weight: 100;
-    font-family: "silk serif";
-    left: -1%;
-    top: 29%;
-} */
+
 
 
 
@@ -259,25 +252,162 @@ body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: #2d2b2b;
+    background-color: #151515;
+    position: relative;
+    padding: 20vh 2vw;
+    margin-bottom: 20vw;
+    margin-top: 20vh;
 }
 
-/* #page3{
-    min-height: 100vh;
-    width: 100%;
-    background-color: #000000;
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
     position: relative;
-} */
+    margin-left: 30vw;
+    
+    
+    }
+ #page3 h1::before{
+        content: "02";
+        position: absolute;
+        font-size: 3vw;
+        font-family: "silk serif";
+        left: -15%;
+        top: 11%;
+    }
+    #page3 .underline{
+        height: 1.5px;
+        width: 100%;
+        background-color: white;
+        margin-left: 28vw;
+        
+    }
+    .image-div{
+        height: 38vw;
+        width: 27vw;
+        /* background-color: blue; */
+        position: relative;
+        /* overflow: hidden; */
+    }
+    .image-div:nth-child(1){
+        height: 29vw;
+        width: 22vw;
+
+
+    }
+    #image-div-container{
+        /* background-color: red; */
+        padding: 1vw;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 3vw;
+        
+
+
+    }
+    .image-div img{
+        height:100% ;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        flex-shrink: 0;
+
+    }
+    .page3-circle1{
+         height: 23vw;
+        width: 23vw;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 23vh;
+        margin-left: 10vw;
+        overflow: hidden;
+
+    }
+    .page3-circle1 svg{
+        height: 30%;
+        
+    }
+    .page3-circle2{
+         height: 23vw;
+        width: 23vw;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: center;
+        position: relative;
+        margin: 2vw;
+        margin-right: 3vw;
+         overflow: hidden;
+         
+
+    }
+    .page3-circle2 svg{
+        height: 30%;
+        rotate: -45deg;
+        
+    }
+    .circle-in{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      scale: 0;
+      border-radius: 50%;
+      transition: all ease 0.4s;
+
+    }
+    .circle-in p{
+        font-size: 1vw;
+        color: black;
+        font-weight: 500;
+        scale: 0;
+     transition: all ease 0.5s;
+     transition-delay: 0.1s;
+    }
+    .page3-circle1:hover .circle-in{
+        scale: 1;
+    }
+    .page3-circle1:hover p{
+        scale: 1;
+        opacity: 1;
+    }
+    .page3-circle2:hover .circle-in{
+        scale: 1;
+    }
+    .page3-circle2:hover p{
+        scale: 1;
+        opacity: 1;
+    }
+
 #page4{
     position: relative;
     min-height: 100vh;
     width: 100%;
     background-color: #151515;
-    padding: 7vh;
+    padding: 7vh 0;
+    /* margin-bottom: 20vw; */
+    
 }
 #page4-content {
    
     width: 72vw ;
+    position: relative;
     margin-left: 28%;
 }
 #page4-content h1{
@@ -356,6 +486,7 @@ position: relative;
     width: 100%;
     background-color: #151515;
     padding: 7vh;
+    /* margin-bottom: 23vh ; */
 }
 .elem{
     /* background-color: red; */
@@ -473,4 +604,8 @@ font-size: 1.5vw;
 
     font-weight: 500;
     font-size: 1vw;
+} 
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
 }
