@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obys Agency</title>
     <link rel="shortcut icon" href="./FavIcon.png" type="image/x-icon" />
+    <link href="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+" rel="stylesheet">
+     
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -32,7 +36,7 @@
       </div>
     </div>
     <div id="main">
-      <div id="page1">
+      <div id="page1"  data-scroll data-scroll-speed="-3">
         <div id="nav">
           <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
             <path
@@ -82,6 +86,7 @@
             <h4>Contacts</h4>
           </div>
         </div>
+        <h1>01</h1>
         <div class="hero" id="hero1">
           <h1>We Design</h1>
         </div>
@@ -96,7 +101,7 @@
           <h1>Experience</h1>
         </div>
       </div>
-      <div id="page2">
+      <div id="page2" data-scroll data-scroll-speed="-3">
         <div id="video-container">
           <div id="video-cursor">
             <i class="ri-play-mini-fill"></i>
@@ -106,15 +111,15 @@
             alt=""
           />
           <video
-            autoplay
+           
             loop
             muted
             src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"
           ></video>
         </div>
       </div>
-      <div id="page3"></div>
-      <div id="page4">
+      <div id="page3" data-scroll data-scroll-speed="-3"></div>
+      <div id="page4" data-scroll>
         <div id="page4-content">
           <h1>About Obys</h1>
           <div class="underline"></div>
@@ -164,7 +169,7 @@
           <div class="underline"></div>
         </div>
       </div>
-      <div id="page5">
+      <div id="page5" data-scroll>
         <div class="elem">
           <h1><span>Sport</span> - Fashion - Technology -</h1>
           <h1><span>Sport</span> - Fashion - Technology -</h1>
@@ -182,7 +187,7 @@
           <h1><span>Science</span> - partners - Travel -</h1>
       </div>
       </div>
-      <div id="footer">
+      <div id="footer" data-scroll>
         <h1>Let's Create</h1>
         <div class="underline"></div>
         <div id="footer-div">
@@ -210,7 +215,9 @@
         <h5>Obys Agency ©️ 2023</h5>
       </div>
     </div>
- 
+    <script src="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+    "></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
