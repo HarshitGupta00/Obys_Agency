@@ -217,6 +217,7 @@ body{
     padding-top: 17vh;
     background-color: #151515;
     position: relative;
+    
 }
 #video-container{
     height: 66vh;
@@ -269,7 +270,7 @@ body{
     background-color: #151515;
     position: relative;
     padding: 20vh 2vw;
-    margin-bottom: 20vw;
+    margin-bottom: 30vw;
     margin-top: 20vh;
 }
 
@@ -318,6 +319,7 @@ body{
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 3vw;
+        margin-top: 10vw;
         
 
 
@@ -415,7 +417,7 @@ body{
     width: 100%;
     background-color: #151515;
     padding: 7vh 0;
-    /* margin-bottom: 20vw; */
+    margin-bottom: 20vw;
     
 }
 #page4-content {
@@ -496,11 +498,11 @@ position: relative;
 }
 #page5{
    
-    min-height: 100vh;
+   min-height: 100vh;
     width: 100%;
     background-color: #151515;
     padding: 7vh;
-    /* margin-bottom: 23vh ; */
+    margin-bottom: 14vw ;
 }
 .elem{
     /* background-color: red; */
@@ -571,6 +573,7 @@ position: relative;
     position: relative;
     padding-left: 28vw;
     padding-right: 5vw;
+    margin-bottom: 20vw;
 
 } 
 #footer h1{
@@ -587,7 +590,7 @@ position: relative;
     left: -15%;
     top: 11%;
 }
-.underline{
+ #footer .underline{
     height: 1px;
     width: 100%;
     background-color: white;

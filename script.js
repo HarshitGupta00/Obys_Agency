@@ -196,6 +196,3 @@ document.querySelector("#hero3").addEventListener("mouseleave" , function(){
     scale:0,
   })
 })
-gsap.from("#footer>h1" , {
-  opacity:0,
-})
