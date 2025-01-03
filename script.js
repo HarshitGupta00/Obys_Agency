@@ -168,31 +168,34 @@ function sheryAnimation(){
     gooey:true,
   })
 }
+function flagAnimation(){
+  document.addEventListener("mousemove" , function(dets){
+  
+    gsap.to("#flag" , {
+     
+      x:dets.x,
+      y:dets.y,
+    })
+  })
+  
+  document.querySelector("#hero3").addEventListener("mouseenter" , function(){
+    gsap.to("#flag" , {
+      opacity:1,
+     scale:1
+    })
+  })
+  document.querySelector("#hero3").addEventListener("mouseleave" , function(){
+    gsap.to("#flag" , {
+      opacity:0,
+      scale:0,
+    })
+  })
+}
 
 loadingAnimation();
 cursorAnimation()
 locomotiveAnimation();
 sheryAnimation();
+flagAnimation();
 
 
-document.addEventListener("mousemove" , function(dets){
-  
-  gsap.to("#flag" , {
-   
-    x:dets.x,
-    y:dets.y,
-  })
-})
-
-document.querySelector("#hero3").addEventListener("mouseenter" , function(){
-  gsap.to("#flag" , {
-    opacity:1,
-   scale:1
-  })
-})
-document.querySelector("#hero3").addEventListener("mouseleave" , function(){
-  gsap.to("#flag" , {
-    opacity:0,
-    scale:0,
-  })
-})
