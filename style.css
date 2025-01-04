@@ -144,6 +144,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2.3vw 5.5vw;
+    
 }
 
 #nav-part2 {
@@ -173,7 +174,7 @@ body{
     
 }
 
-.hero:nth-child(2) {
+.hero:nth-child(2 ) {
     margin-top: 18vh;
 }
 
@@ -297,6 +298,7 @@ body{
         margin-left: 28vw;
         
     }
+    
     .image-div{
         height: 38vw;
         width: 27vw;
@@ -639,7 +641,7 @@ font-size: 1.5vw;
 @media (max-width:600px){
     
     #page1 {
-        height: 75vh;
+        height: 60vh;
         width: 100%;
         background-color: #151515;
        padding-top: 1px;
@@ -649,7 +651,7 @@ font-size: 1.5vw;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding: 2.3vw 5.5vw;
+        padding: 3.3vw 5vw;
         position: fixed;
         top: 3%;
         width: 100%;
@@ -689,7 +691,7 @@ font-size: 1.5vw;
     
     .hero:nth-child(3) {
         
-        margin-top: 28vh;
+        margin-top: 25vh;
     }
     
     .hero h1 {
@@ -703,7 +705,7 @@ font-size: 1.5vw;
         position: absolute;
         font-family: "silk serif";
         left: 5.5%;
-        top: 29%;
+        top: 32%;
         font-size: 4.7vw;
         
     }
@@ -723,19 +725,18 @@ font-size: 1.5vw;
         border-bottom: 0.8vw solid #ffffff00;
     }
     #page2{
-        height: 100vh;
+        height: 50vh;
         width: 100%;
-        padding-top: 17vh;
+        padding-top: 10vh;
         background-color: #151515;
         position: relative;
-        /* background-color: red; */
 
     }
     #video-container{
-        height: 66vh;
-        width: 71vw;
+        height: 50vh;
+        width: 100vw;
         position: relative;
-        left: 28%;
+        left:0%;
         background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
         background-size: cover;
         background-position: center;
@@ -743,13 +744,13 @@ font-size: 1.5vw;
         
     }
     #video-cursor{
-        height: 10vw;
-        width: 10vw;
+        height: 25vw;
+        width: 25vw;
         border-radius: 50%;
         background-color:#FFA63D;
         position: absolute;
-        top: -10%;
-        left: 80%;
+        top: 50%;
+        left: 50%;transform: translate(-50% , -50%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -757,16 +758,9 @@ font-size: 1.5vw;
     
     }
     #video-cursor i{
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
-    /* #video-container img{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        top: 0;
-          
-    } */
+    
     
     #video-container video{
         height: 100%;
@@ -775,5 +769,157 @@ font-size: 1.5vw;
         opacity: 0;
         
     }
+    #page3{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #151515;
+        position: relative;
+        padding: 16vh 2vw;
+        margin-bottom: 30vw;
+        margin-top: 0vh;
+        
+    }
+    
+    #page3 h1{
+        font-size: 10vw;
+        text-transform: uppercase;
+        position: relative;
+        margin-left: 3vw;
+        
+        
+        }
+     #page3 h1::before{
+            content: "02";
+            position: absolute;
+            font-size: 4.5vw;
+            font-weight: 400;
+            font-family: "silk serif";
+            left: 0%;
+            top: -70%;
+        }
+        #page3 .underline{
+            height: 1.2px;
+            width: 90%;
+            background-color: white;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            margin-top: 5vh;
+            
+        }
+        .img-outer{
+
+        }
+        .image-div{
+            height: 70vh;
+            width: 90vw;
+            position: relative;
+           
+        }
+        .image-div:nth-child(1){
+            height: 70vh;
+            width: 90vw;
+    
+    
+        }
+        #image-div-container{
+            /* background-color: red; */
+            padding: 5vw 2vw;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3vw;
+            margin-top: 10vw;
+            
+    
+    
+        }
+        .image-div img{
+            height:100% ;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            flex-shrink: 0;
+    
+        }
+        .page3-circle1{
+             height: 23vw;
+            width: 23vw;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: none;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 23vh;
+            margin-left: 10vw;
+            overflow: hidden;
+    
+        }
+        .page3-circle1 svg{
+            height: 30%;
+            
+        }
+        .page3-circle2{
+             height: 23vw;
+            width: 23vw;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            flex-shrink: 0;
+            justify-content: center;
+            position: relative;
+            margin: 2vw;
+            margin-right: 3vw;
+             overflow: hidden;
+             
+    
+        }
+        .page3-circle2 svg{
+            height: 30%;
+            rotate: -45deg;
+            
+        }
+        .circle-in{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          scale: 0;
+          border-radius: 50%;
+          transition: all ease 0.4s;
+    
+        }
+        .circle-in p{
+            font-size: 1vw;
+            color: black;
+            font-weight: 500;
+            scale: 0;
+         transition: all ease 0.5s;
+         transition-delay: 0.1s;
+        }
+        .page3-circle1:hover .circle-in{
+            scale: 1;
+        }
+        .page3-circle1:hover p{
+            scale: 1;
+            opacity: 1;
+        }
+        .page3-circle2:hover .circle-in{
+            scale: 1;
+        }
+        .page3-circle2:hover p{
+            scale: 1;
+            opacity: 1;
+        }
 
 }
