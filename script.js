@@ -168,7 +168,7 @@ function sheryAnimation(){
     gooey:true,
   })
 }
-function flagAnimation(){
+function flag(){
   document.addEventListener("mousemove" , function(dets){
   
     gsap.to("#flag" , {
@@ -190,12 +190,15 @@ function flagAnimation(){
       scale:0,
     })
   })
+
+  
+  
 }
+
 
 loadingAnimation();
 cursorAnimation()
 locomotiveAnimation();
 sheryAnimation();
-flagAnimation();
-
+flag();
 
